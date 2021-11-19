@@ -18,6 +18,22 @@
         <filename>bootstrap.php</filename>
         <filename>index.html</filename>        
     </files>
+      <config>
+		<fields name="params" addfieldpath="/plugins/system/revo_optimizer/fields/">
+			<fieldset name="basic">
+			
+				<field
+						name="childthemename"
+						type="input"
+						default=""
+						label="Child Theme name prefix"
+						description="Specify the prefix like as: child if your child theme have a name: yootheme_child"
+						
+				>					
+				</field>               
+            </fieldset>
+		</fields>
+	</config>
     <updateservers>
         <server type="extension" priority="1" name="Revo LESS Connector">https://alexrevo.pw/updates/rlc_joomla.xml</server>
     </updateservers>

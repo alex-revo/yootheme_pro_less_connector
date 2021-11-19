@@ -19,6 +19,11 @@ use YOOtheme\Config;
 
 class PlgSystemRevo_Less_Connector extends JPlugin
 {
+	public function getParams($name)
+	{
+		return $this->params->get($name, '');
+	}
+
 	public function onAfterInitialise()
 	{
 		// Check if YOOtheme Pro is loaded
