@@ -6,23 +6,6 @@ defined('_JEXEC') or die();
 
 use YOOtheme\Builder;
 use YOOtheme\Path;
-use function YOOtheme\app;
-use YOOtheme\Config;
-
-include_once __DIR__ . '/src/SettingsListener.php';
-//echo "boot";
-$config = app(Config::class);
-$theme = $config->get('~theme');
-//print_r($theme);
-if (isset($theme['child_theme'])) {
-
-    $folder = JPATH_SITE . '/templates/yootheme_' . $theme['child_theme'] . '/less/';
-
-    if (is_dir($folder)) {
-        // Load all modules
-        echo "yes";
-    }
-}
 
 return [
     'theme' => [
@@ -32,14 +15,4 @@ return [
             ],
         ],
     ],
-    'events' => [
-
-        // Add settings Panels
-        'customizer.init' => [
-            SettingsListener::class => 'initCustomizer',
-        ]
-
-    ],
-
-
 ];
