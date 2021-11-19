@@ -1,15 +1,15 @@
 <?php
 
 /**
- * @package   Revo Debugger for YOOtheme Pro
+ * @package   Revo LESS connector for YOOtheme Pro
  * @author    Alex Revo https://alexrevo.pw
  * @copyright Copyright (C) Aleksandr Sudbinov
- * @license   MIT
+ * @license   GPL v.3
  */
 
 defined('_JEXEC') or die;
 
-class PlgSystemRevo_DebuggerInstallerScript
+class PlgSystemRevo_LESSConnectorInstallerScript
 {
 
     public function install($parent)
@@ -28,7 +28,7 @@ class PlgSystemRevo_DebuggerInstallerScript
                 ->update($db->qn('#__extensions'))
                 ->set($db->qn('enabled') . ' = ' . $db->q(1))
                 ->where('type = ' . $db->q('plugin'))
-                ->where('element = ' . $db->q('revo_debugger'));
+                ->where('element = ' . $db->q('revo_less_connector'));
             $db->setQuery($query);
             $db->execute();
         } catch (\Exception $e) {
