@@ -9,7 +9,7 @@
 
 defined('_JEXEC') or die;
 
-class PlgSystemRevo_LessconnectorInstallerScript
+class PlgSystemRevo_Less_ConnectorInstallerScript
 {
 
     public function install($parent)
