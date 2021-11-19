@@ -5,7 +5,7 @@ defined('_JEXEC') or die();
 use YOOtheme\Builder;
 use YOOtheme\Path;
 
-$themejsload = PlgSystemRevo_Less_Connector::getParams('childthemename');
+$themejsload = PlgSystemRevo_Less_Connector::config->get('childthemename');
 echo $themejsload;
 return [
     'theme' => [
