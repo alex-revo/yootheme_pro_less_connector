@@ -19,10 +19,16 @@ use YOOtheme\Config;
 
 class PlgSystemRevo_Less_Connector extends JPlugin
 {
-	public function getParams($name)
+
+	public static $config;
+
+
+	public function __construct(&$subject, $config = array())
 	{
-		return $this->params->get($name, '');
+		parent::__construct($subject, $config);
+		self::$config = &$this->params;
 	}
+
 
 	public function onAfterInitialise()
 	{
