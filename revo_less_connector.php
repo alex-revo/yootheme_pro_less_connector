@@ -14,8 +14,6 @@ use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Uri\Uri;
 use Joomla\Registry\Registry;
 use YOOtheme\Application;
-use function YOOtheme\app;
-use YOOtheme\Config;
 
 class PlgSystemRevo_Less_Connector extends JPlugin
 {

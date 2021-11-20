@@ -26,7 +26,7 @@
 						name="childthemename"
 						type="input"
 						default=""
-						label="Child Theme name prefix"
+						label="Child Theme name _prefix"
 						description="Specify the prefix like as: child if your child theme have a name: yootheme_child"
 						
 				>					
