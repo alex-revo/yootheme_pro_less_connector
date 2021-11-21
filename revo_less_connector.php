@@ -1,10 +1,10 @@
 <?php
 /*
- * @package    Revo Debugger System Plugin
+ * @package    Revo LESS connector System Plugin
  * @version    0.0.1
  * @author     Alex Revo - alexrevo.pw
  * @copyright  Copyright (c) 2021 Alex Revo. All rights reserved.
- * @license    MIT
+ * @license    GPL v.3
  * @link       https://alexrevo.pw/
  */
 defined('_JEXEC') or die;
