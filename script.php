@@ -11,12 +11,10 @@ defined('_JEXEC') or die;
 
 class PlgSystemRevo_Less_ConnectorInstallerScript
 {
-
     public function install($parent)
     {
         // Enable the extension
         $this->enablePlugin();
-
         return true;
     }
 

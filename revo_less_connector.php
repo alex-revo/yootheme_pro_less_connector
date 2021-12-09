@@ -1,7 +1,7 @@
 <?php
 /*
  * @package    Revo LESS connector System Plugin
- * @version    0.0.1
+ * @version    1.0.0
  * @author     Alex Revo - alexrevo.pw
  * @copyright  Copyright (c) 2021 Alex Revo. All rights reserved.
  * @license    GPL v.3

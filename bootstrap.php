@@ -38,25 +38,3 @@ if (is_dir($folder)) {
 } else {
     return [];
 }
-
-
-//test connect custom.less and revo.less
-//$json = '{"theme":{"styles":{"components":{"custom":"' . JPATH_SITE . '/templates/yootheme_child/less/custom.less","revo":"' . JPATH_SITE . '/templates/yootheme_child/less/revo.less"}}}}';
-//echo json_decode($json, true);
-/* if ($prefix && is_dir($folder)) {
-    return [
-        'theme' => [
-            'styles' => [
-                'components' => [
-                    'my-component' => (JPATH_SITE . '/templates/yootheme_' . $prefix . '/less/custom.less'),
-                    'my-component2' => (JPATH_SITE . '/templates/yootheme_' . $prefix . '/less/revo.less'),
-                    //  $name => (JPATH_SITE . '/templates/yootheme_' . $prefix . '/less/revo.less'),
-                    //  $components,
-                ],
-            ],
-        ],
-    ];
-    //    return json_decode($json, true);
-} else {
-    return [];
-} */
